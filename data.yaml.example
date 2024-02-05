@@ -1,0 +1,8 @@
+foo:
+  data:
+    - a: foo
+      b: bar
+      c: barz
+    - a: hello
+      b: world
+      c: dude

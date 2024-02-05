@@ -1,0 +1,17 @@
+<?php
+/** @var array $data */
+?>
+<table>
+    <tr>
+        <th>a</th>
+        <th>b</th>
+        <th>c</th>
+    </tr>
+    <?php foreach ($data as $values): ?>
+        <tr>
+            <td><?= $values['a'] ?></td>
+            <td><?= $values['b'] ?></td>
+            <td><?= $values['c'] ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>

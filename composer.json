@@ -1,0 +1,8 @@
+{
+    "name": "acme/php-in-docker",
+    "type": "project",
+    "require": {
+        "php": "8.2.*",
+        "symfony/yaml": "6.4.*"
+    }
+}
