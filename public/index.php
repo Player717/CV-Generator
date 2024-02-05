@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 require '../vendor/autoload.php';
 
-function includeView(string $view): void
+function includeView(string $view, array $data): void
 {
-    global $data;
-    \extract($data[$view] ?? []);
+    \extract($data);
     $path = \sprintf('../views/%s.phtml', $view);
 
     if (! \file_exists($path)) {
@@ -26,4 +25,4 @@ if (! \file_exists($dataFile)) {
 $data = \Symfony\Component\Yaml\Yaml::parseFile($dataFile);
 
 $view = $_GET['view'] ?? 'welcome';
-includeView($view);
+includeView($view, $data[$view] ?? []);
