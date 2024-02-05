@@ -25,4 +25,5 @@ if (! \file_exists($dataFile)) {
 $data = \Symfony\Component\Yaml\Yaml::parseFile($dataFile);
 
 $view = $_GET['view'] ?? 'welcome';
-includeView($view, $data[$view] ?? []);
+$viewData = $data[$view] ?? [];
+includeView($view, $viewData);
