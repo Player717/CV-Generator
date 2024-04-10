@@ -1,8 +1,82 @@
-foo:
+cv:
   data:
-    - a: foo
-      b: bar
-      c: barz
-    - a: hello
-      b: world
-      c: dude
+    name: Max Mustermann
+    title: "CV"
+    hobbys:
+      - a: Hobby 1
+        b: Hobby 2
+        c: Hobby 3
+        d: Hobby 4
+    sonstiges:
+      - a: Sonstiges
+    lieblingsfaecher:
+      - a: Lieblingsfach
+        b: Lieblingsfach
+        c: Lieblingsfach
+    logo:
+      datei: logo.png
+      link: https://www.imos.net
+    kurse:
+      a:
+        - title: Ein Kurs:
+          link:
+          text: Hier kommt ein Text hin.
+      b:
+        - title: Ein Kurs:
+          link:
+          text: Hier kommt ein Text hin.
+      c:
+        - title: Ein Kurs:
+          link:
+          text: Hier kommt ein Text hin.
+      d:
+        - title: Infos zu ein Kurs:
+          link: https://www.minecraft.net/de-de
+          text: Hier kommt ein Text hin.
+      e:
+        - title: Infos zu ein Kurs:
+          link: https://appinventor.mit.edu/
+          text: Hier kommt ein Text hin.
+      f:
+        - title: Infos zu ein Kurs:
+          link: https://www.logiscool.com/de/
+          text: Hier kommt ein Text hin.
+    beliebiger text: Sollten Sie Fragen haben, können Sie sich jederzeit gerne an mich wenden!
+    praktika:
+      a:
+        - firma: Imos
+          ausbildungsberuf: Fachinformatiker für Anwendungsentwicklung
+          jahrMonat: 2024/01
+          tage: 10-20
+      b:
+        - firma:
+          ausbildungsberuf:
+          jahrMonat:
+          tage:
+    interessen:
+      a:
+        - title: Interessen:
+          text: Hier soll eine Interesse stehen.
+      b:
+        - title: Interessen:
+          text: Hier soll eine Interesse stehen.
+      c:
+        - title: Interessen:
+          text: Hier soll eine Interesse stehen.
+      d:
+        - title: Interessen:
+          text: Hier soll eine Interesse stehen.
+      e:
+        - title: Interessen:
+          text: Hier soll eine Interesse stehen.
+      f:
+        - title: Interessen:
+          text: Hier soll eine Interesse stehen.
+    ende: Hier könnt ihr mich finden
+
+
+
+
+
+
+

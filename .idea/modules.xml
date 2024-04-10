@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/php-in-docker.iml" filepath="$PROJECT_DIR$/.idea/php-in-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CV-Generator.iml" filepath="$PROJECT_DIR$/.idea/CV-Generator.iml" />
     </modules>
   </component>
 </project>
