@@ -16,7 +16,7 @@ function includeView(string $view, array $data): void
     include $path;
 }
 
-$dataFile = '../data.yaml';
+$dataFile = '../data1.yaml';
 
 if (! \file_exists($dataFile)) {
     echo 'Bitte Datei "data.yaml" anlegen';
