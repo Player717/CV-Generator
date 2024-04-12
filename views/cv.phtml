@@ -4,6 +4,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.7546 10.8204C21.7546 11.3056 21.4746 11.7473 21.0357 11.9544L19.2703 12.7873C17.9835 13.3944 16.821 14.2124 15.8149 15.2184C14.8088 16.2245 13.9908 17.3871 13.3837 18.6739L12.5508 20.4393C12.3438 20.8782 11.902 21.1582 11.4168 21.1582C10.8772 21.1582 10.398 20.8128 10.2273 20.3008L5.79746 7.01108C5.5663 6.3177 5.85778 5.832 6.14309 5.54669C6.42851 5.26138 6.91409 4.96979 7.60759 5.20095L20.8972 9.63086C21.4092 9.80148 21.7546 10.2807 21.7546 10.8204ZM24.8444 5.77999L8.45307 0.316237C3.79289 -1.23723 -0.640723 3.19638 0.912632 7.85667L6.3765 24.2479C6.73707 25.3299 7.74957 26.0596 8.8899 26.0596H14.0591C14.8281 26.0596 15.5281 25.6158 15.8562 24.9204L17.8167 20.7653C18.5513 19.2081 19.8046 17.9549 21.3618 17.2202L25.5168 15.2597C26.2123 14.9316 26.656 14.2316 26.656 13.4626V8.29351C26.656 7.15306 25.9263 6.14067 24.8444 5.77999Z' fill='%230667F9'/%3E%3C/svg%3E%0A"/>
@@ -31,16 +34,17 @@
             position: sticky;
             top: 0;
             padding: 20px 0;
-            background-color: white;
+            background-color: <?= $data['farbe3'] ?>;
             z-index: 10;
         }
+
     </style>
     <script type="module" crossorigin src="/assets/index-tWqXR67_.js"></script>
-    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script>
 </head>
-<body id="page">
+<body id="page" style="background-color:<?= $data['farbe3'] ?>;"
 <div class="wrapper bg-white px-6 py-32 lg:px-8" id="top">
     <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <div class="header flex justify-between mb-20">
@@ -61,10 +65,10 @@
         <?php endif; ?>
 
         <div class="text-center mb-5">
-            <p class="mb-7"><?= $data['name'] ?></p>
+            <p style="color: <?= $data['farbe4'] ?>" class="mb-7"><?= $data['name'] ?><p>
             <h1 class="font-bold text-5xl mb-5">Lebenslauf</h1>
             <p class="mb-5">Hier kommst du zu meinem Profil</p>
-            <button type="button"  class="button rounded-full px-4 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors">Mein Profil</button>
+            <a type="button" href="#ende" class="button rounded-full px-4 py-2.5 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors">Meine Profile</a>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-20">
@@ -128,6 +132,11 @@
                             <div class="relative flex space-x-3">
                                 <div>
                                             <span class="h-10 w-10 rounded-full bg-blue-400 flex items-center justify-center ring-8 ring-white">
+
+
+
+
+
                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M15.4127 0.674988H8.58769C7.31269 0.674988 6.2627 1.72499 6.2627 2.99999V21C6.2627 22.275 7.31269 23.325 8.58769 23.325H15.4127C16.6877 23.325 17.7377 22.275 17.7377 21V2.99999C17.7752 1.72499 16.6877 0.674988 15.4127 0.674988ZM16.0877 21C16.0877 21.375 15.7877 21.675 15.4127 21.675H8.58769C8.21269 21.675 7.9127 21.375 7.9127 21V19.6875H12.6002C13.0502 19.6875 13.4252 19.3125 13.4252 18.8625C13.4252 18.4125 13.0502 18.0375 12.6002 18.0375H7.9127V16.125H10.6877C11.1377 16.125 11.5127 15.75 11.5127 15.3C11.5127 14.85 11.1377 14.475 10.6877 14.475H7.9127V12.6375H12.6002C13.0502 12.6375 13.4252 12.2625 13.4252 11.8125C13.4252 11.3625 13.0502 10.9875 12.6002 10.9875H7.9127V9.14999H10.6877C11.1377 9.14999 11.5127 8.77499 11.5127 8.32499C11.5127 7.87499 11.1377 7.49999 10.6877 7.49999H7.9127V5.66249H12.6002C13.0502 5.66249 13.4252 5.28749 13.4252 4.83749C13.4252 4.38749 13.0502 4.01249 12.6002 4.01249H7.9127V2.99999C7.9127 2.62499 8.21269 2.32499 8.58769 2.32499H15.4127C15.7877 2.32499 16.0877 2.62499 16.0877 2.99999V21Z" fill="#111928"/>
                                                 </svg>
@@ -135,7 +144,7 @@
                                 </div>
                                 <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                                     <div>
-                                        <p class="text-xl text-gray-500"><?= $data['lieblingsfaecher'] [0]['a'] ?> <a href="#" class="font-medium text-gray-900"></a></p>
+                                        <p style="color: <?= $data['farbe4'] ?>" class="text-xl"><?= $data['lieblingsfaecher'] [0]['a'] ?> <a href="#" class="font-medium text-gray-900"></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +163,7 @@
                                 </div>
                                 <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                                     <div>
-                                        <p class="text-xl text-gray-500"><?= $data['lieblingsfaecher'][0]['b'] ?><a href="#" class="font-medium text-gray-900"></a></p>
+                                        <p style="color: <?= $data['farbe4'] ?>" class="text-xl text-gray-500"><?= $data['lieblingsfaecher'][0]['b'] ?><a href="#" class="font-medium text-gray-900"></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +188,7 @@
                                 </div>
                                 <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                                     <div>
-                                        <p class="text-xl text-gray-500"><?= $data['lieblingsfaecher'][0]['c'] ?><a href="#" class="font-medium text-gray-900"></a></p>
+                                        <p style="color: <?= $data['farbe4'] ?>" class="text-xl text-gray-500"><?= $data['lieblingsfaecher'][0]['c'] ?><a href="#" class="font-medium text-gray-900"></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +213,7 @@
 
 
         </div>
-        <h4 class="text-gray-400 text-5xl text-center mb-20 font-bold"><?= $data['beliebiger text'] ?></h4>
+        <h4 style="color: <?= $data['farbe4'] ?>" class="text-gray-400 text-5xl text-center mb-20 font-bold"><?= $data['beliebiger text'] ?></h4>
 
         <div class=" mb-20" id="CV" style="scroll-margin-top: 10rem;">
             <div class="sm:flex sm:items-center">
@@ -232,9 +241,9 @@
                                 <?php foreach($praktika as $praktikum): ?>
                                     <tr>
                                         <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"><?= $praktikum['firma'] ?></td>
-                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $praktikum['ausbildungsberuf'] ?></td>
-                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $praktikum['jahrMonat'] ?></td>
-                                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $praktikum['tage'] ?></td>
+                                        <td style="color: <?= $data['farbe4'] ?>" class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $praktikum['ausbildungsberuf'] ?></td>
+                                        <td style="color: <?= $data['farbe4'] ?>" class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $praktikum['jahrMonat'] ?></td>
+                                        <td style="color: <?= $data['farbe4'] ?>" class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $praktikum['tage'] ?></td>
                                     </tr>
                                 <?php endforeach; ?>
                             <?php endforeach; ?>
@@ -285,12 +294,12 @@
         <div  class="mb-20 text-center">
             <h7 class="font-bold text-4xl  mb-20"><?= $data['name'] ?></h7>
             <ul>
-                <li class="text-gray-400 text-1xl"><?= $data['ende'] ?>:</li>
+                <li style="color: <?= $data['farbe4'] ?>" class="text-1xl"><?= $data['ende'] ?>:</li>
             </ul>
         </div>
 
         <div>
-            <div class="flex justify-evenly">
+            <div id="ende" class="flex justify-evenly">
                 <?php foreach($data['icons'] as $icons): ?>
                     <?php foreach($icons as $icon): ?>
                         <a <?= isset($icon['link']) ? "href='{$icon['link']}'" : null ?>> <img <?= isset($icon['icon']) ? "src='/icons/{$icon['icon']}'" : null ?>></a>

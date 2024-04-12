@@ -33,15 +33,15 @@ cv:
           text: 'Hier kommt ein Text hin.'
       d:
         - title: 'Infos zu ein Kurs:'
-          link: 'https://www.minecraft.net/de-de'
+          link: ''
           text: 'Hier kommt ein Text hin.'
       e:
         - title: 'Infos zu ein Kurs:'
-          link: 'https://appinventor.mit.edu/'
+          link: ''
           text: 'Hier kommt ein Text hin.'
       f:
         - title: 'Infos zu ein Kurs:'
-          link: 'https://www.logiscool.com/de/'
+          link: ''
           text: 'Hier kommt ein Text hin.'
     beliebiger text: 'Sollten Sie Fragen haben, können Sie sich jederzeit gerne an mich wenden!'
     praktika:
@@ -74,9 +74,11 @@ cv:
       f:
         - title: 'Interessen:'
           text: 'Hier soll eine Interesse stehen.'
-    ende: 'Hier könnt ihr mich finden'
-    farbe: "#67e8f9"
-    farbe2: "#bfdbfe"
+    ende: 'Hier können Sie mich finden'
+    farbe: "yellow"
+    farbe2: "#f9a8d4"
+    farbe3: "white"
+    farbe4: "blue"
 # "#3b82f6" blau
 # "#d9f99d" lime grün
 # "#fca5a5" rosa
@@ -91,6 +93,12 @@ cv:
 # "#f9a8d4" pink
 # "#fda4af" rose
 # "#bfdbfe" hellblau
+# "#8af42c" grün hell
+# "#2cf4d0" tannen grün
+# "#2c99f4" blau grün
+# "#C0C0C0" silver
+# "#FF00FF" magenta
+# "#00FFFF" cyan
     icons:
         a:
           - icon: 'twitter.svg'
